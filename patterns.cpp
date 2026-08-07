@@ -88,7 +88,7 @@
 // }
 #include<bits/stdc++.h>
 using namespace std;
-// int main () {     /*  RECTANGULAR PATTERN*/
+// int main () {     /* 1. RECTANGULAR PATTERN*/
 //     int n=5;
 //     for(int i = 0 ; i<n; i++) {
 //         for(int j=0; j< n; j++) {
@@ -100,7 +100,7 @@ using namespace std;
 
 // }
 // int main () {
-//     int n =4;   /*  INCREASING  PATTERN*/
+//     int n =4;   /* 2. INCREASING  PATTERN*/
 //       for(int i = 0 ; i<n; i++) {
 //         for(int j=0; j<=i; j++) {
 // cout<<"*"<<" ";
@@ -111,7 +111,31 @@ using namespace std;
 //     return 0;
 // }
 // int main () {
-//     int n =4;   /*  Decreasing  PATTERN*/
+//     int n =4;   /*  3. INCREASING  PATTERN of nums*/
+//       for(int i = 1 ; i<=n; i++) {
+        
+//         for(int j=1; j<=i; j++) {
+// cout<<j<<" ";
+//         }
+//         cout<<endl;
+//     }
+   
+//     return 0;
+// }
+// int main () {
+//     int n =4;   /*  4. INCREASING  PATTERN of nums..*/
+//       for(int i = 1 ; i<=n; i++) {
+        
+//         for(int j=1; j<=i; j++) {
+// cout<<i<<" ";
+//         }
+//         cout<<endl;
+//     }
+   
+//     return 0;
+// }
+// int main () {
+//     int n =4;   /*  5.Decreasing  PATTERN*/
 //       for(int i = 0 ; i<n; i++) {
 //         for(int j=i; j<n; j++) {
 // cout<<"*"<<" ";
@@ -121,18 +145,29 @@ using namespace std;
    
 //     return 0;
 // }
+// int main () {
+//     int n =5;   /*  6.Decreasing  PATTERN nums..*/
+//       for(int i = 1 ; i<=n; i++) {
+//         for(int j=1; j<=n-i+1; j++) {
+// cout<<j<<" ";
+//         }
+//         cout<<endl;
+//     }
+   
+//     return 0;
+// }
 int main () {
-    int n =4;   
+    int n =5;   
       for(int i = 0 ; i<n; i++) { 
         for(int j=0; j<n-i-1; j++) {// spaces
 cout<<" ";
         }
-        for(int j=0; j<=i; j++) {// stars1
+        for(int j=0; j<2*i+1; j++) {// stars1
 cout<<"*";
         }
-         for(int j=0; j<i; j++) {// stars2
-cout<<"*";
-        }
+//          for(int j=0; j<i; j++) {// stars2
+// cout<<"*";
+//         }
 
         cout<<endl;
     }
