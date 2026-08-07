@@ -156,21 +156,73 @@ using namespace std;
    
 //     return 0;
 // }
-int main () {
-    int n =5;   
-      for(int i = 0 ; i<n; i++) { 
-        for(int j=0; j<n-i-1; j++) {// spaces
-cout<<" ";
-        }
-        for(int j=0; j<2*i+1; j++) {// stars1
-cout<<"*";
-        }
-//          for(int j=0; j<i; j++) {// stars2
+// int main () {      7.PYRAMID PROBLEM 
+//     int n =5;   
+//       for(int i = 0 ; i<n; i++) { 
+//         for(int j=0; j<n-i-1; j++) {// spaces
+// cout<<" ";
+//         }
+//         for(int j=0; j<2*i+1; j++) {// stars
 // cout<<"*";
 //         }
 
-        cout<<endl;
-    }
+//         cout<<endl;
+//     }
    
-    return 0;
+//     return 0;
+// }
+// int main () {     // 8. REVERSE PYRAMID PROBLEM 
+//     int n =5;   
+//       for(int i = 1 ; i<=n; i++) { 
+//         for(int j=1; j<i; j++) {// spaces
+// cout<<" ";
+//         }
+//         for(int j=1; j<2*(n-i); j++) {// stars
+// cout<<"*";
+//         }
+// //          for(int j=0; j<i; j++) {// stars2
+// // cout<<"*";
+// //         }
+
+//         cout<<endl;
+//     }
+   
+//     return 0;
+// }
+
+// int main () {     // 10. HALF BUTTERFLY
+//     int n =5;   
+//       for(int i = 0 ; i<n; i++) { 
+//         for(int j=0; j<=i; j++) {// spaces
+// cout<<"*";
+//         }
+//         cout<<endl;
+// }
+//   for(int i = 0 ; i<n-1; i++) {
+//         for(int j=i; j<n-1; j++) {// stars
+// cout<<"*";
+//         }
+// //       
+
+//         cout<<endl;
+//     }
+   
+//     return 0;
+// }
+
+int main () {
+        
+ //11.alternate 1's and 0's printing
+ int n=5; int start=0;
+ for(int i= 0; i< n; i++) {
+        if(i%2==0)  start=1;
+        else start=0;
+        for(int j =0; j<=i;j++) {
+                cout<<start<<" ";
+                start=1-start;
+        }
+        cout<<endl;
+
+ }
+return 0;
 }
