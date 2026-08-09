@@ -227,20 +227,134 @@ using namespace std;
 // return 0;
 // }
 
-int main () {
-        int n = 4;
-        for(int i = 1; i<=n; i++) {
-        for(int j =1; j<=i; j++) {
-                cout<<j;
-        }
-         for(int j =1; j<=2*(n-i); j++) {
-                cout<<" ";
-        }
-        for(int j=i; j>=1; j--) {
-                cout<<j;
-        }
-cout<<endl;
-}
-        return 0;
+// int main () {   // 12. NUMBERS IN V SHAPE
+//         int n  = 4;
+//         for(int i = 1; i<=n; i++) {
+//         for(int j =1; j<=i; j++) {
+//                 cout<<j;
+//         }
+//          for(int j =1; j<=2*(n-i); j++) {
+//                 cout<<" ";
+//         }
+//         for(int j=i; j>=1; j--) {
+//                 cout<<j;
+//         }
+// cout<<endl;
+// }
+//         return 0;
 
+// }
+// int main () {
+//     int n =5;   /*  13. INCREASING    nums..*/
+//     int num=1;
+//       for(int i = 1 ; i<=n; i++) {
+        
+//         for(int j=1; j<=i; j++) {
+// cout<<num++<<" ";
+//         }
+//         cout<<endl;
+//     }
+   
+//     return 0;
+// }
+// int main () {
+//     int n =5;   /*  14. INCREASING    nums..*/
+   
+//       for(int i = 1 ; i<=n; i++) {
+//          char ch='A';
+//         for(int j=1; j<=i; j++) {
+// cout<<ch++<<" ";
+//         }
+//         cout<<endl;
+//     }
+   
+//     return 0;
+// }
+// int main () {
+//     int n =5;   /*  15. INCREASING    nums..*/
+   
+//       for(int i = 0 ; i<n; i++) {
+//          char ch='A';
+//         for(int j=0; j<n-i; j++) {
+// cout<<ch++<<" ";
+//         }
+//         cout<<endl;
+//     }
+   
+//     return 0;
+// }
+// int main () {
+//     int n =5;   /*  16. INCREASING    nums..*/
+//    char ch='A';
+//       for(int i = 0 ; i<n; i++) {
+        
+//         for(int j=0; j<=i; j++) {
+// cout<<ch<<" ";
+//         }
+//         ch++;
+//         cout<<endl;
+//     }
+   
+//     return 0;
+// }
+
+// int main () {
+//     int n =4;   /*  17. INCREASING and decreasing characters with spaces on first    nums..*/
+ 
+//       for(int i = 0 ; i<n; i++) {
+         
+//         for(int j=0; j<n-i-1; j++) {
+// cout<<" ";
+//         }
+//         for(char ch='A';ch<='A'+i; ch++) { // increasing
+// cout<<ch;
+//         }
+//             for(char ch='A'+i-1;ch>='A'; ch--) { //decreasing
+// cout<<ch;
+//         }
+        
+        
+//         cout<<endl;
+//     }
+   
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n = 5;
+
+//     for (int i = 0; i < n; i++) {
+
+//         for (char ch = 'E' - i; ch <= 'E'; ch++) {
+//             cout << ch << " ";
+//         }
+
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+int main() {
+    int n = 4;
+
+    for (int i = 1; i <= n; i++) {
+
+        for (int j =1; j<=n ;j++) {
+if(i==1 || i==n || j==1||j==n) {
+        cout<<"*";
 }
+else {
+        cout<<" ";
+}
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+

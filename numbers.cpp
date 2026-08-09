@@ -16,7 +16,7 @@ cout<<a<<"\n";
 int temp=a+b;
 a=b;
 b=temp;
-    }
+    } 
 }
 int main () {
     int n =10;
