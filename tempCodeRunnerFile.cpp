@@ -1,1 +1,1 @@
-ans
+selectionSort(arr,n);

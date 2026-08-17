@@ -49,7 +49,7 @@ int diagonal_Sum(vector<vector<int>> &mat) {
     diagonalSum+=mat[i][i];
     if(i!=rows-i-1) {
         diagonalSum+=mat[i][rows-i-1];
-    }
+    } //  OPTIMISE APPROACH 
     }
     return diagonalSum;
 
