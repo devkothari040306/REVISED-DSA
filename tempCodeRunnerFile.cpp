@@ -1,1 +1,1 @@
-selectionSort(arr,n);
+ll.insertNode(4,1);
