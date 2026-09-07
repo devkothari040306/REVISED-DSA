@@ -17,6 +17,10 @@ vector<int> stock_span(vector<int> prices) {
     }
     return ans;
 }
+vector<int>previous_smaller(vector<int>& arr) {
+    
+
+}
 int main () {
     vector<int>prices={100,80,60,70,60,75,85};
     vector<int> ans=stock_span(prices);
