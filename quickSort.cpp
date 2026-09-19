@@ -1,41 +1,42 @@
 #include<bits/stdc++.h>
 using namespace std;
-int partition(vector<int>& arr, int st , int end) {
-    int piv=arr[end];
+
+int partition(vector<int>& nums , int st , int mid , int end) {
+    int piv=nums[end];
     int idx=st-1;
-    for(int j= st; j<end; j++) {
-        if(arr[j]<=piv) {
+    for(int i = st; i< end; i++) {
+        if(nums[i]<=piv) {
             idx++;
-            swap(arr[j],arr[idx]);
+            swap(nums[idx], nums[i]);
         }
     }
     idx++;
-    swap(arr[end], arr[idx]); // dont use piv here , use arr[end];
-    return idx; // returning the idx;
-}
-  void quickSort(vector<int>& arr, int st , int end) {
-        // base case
-        if(st>=end) {
-            return;
-        }
-        if(st<end) {
-            int pivIdx=partition(arr, st, end);
-            //  left partition 
-            quickSort(arr,st, pivIdx-1);
-            // right partition
-             quickSort(arr, pivIdx+1,end);
-        }
-
+    swap(nums[idx],nums[end]);
+    return idx;
     }
 
+
+ void quickSort(vector<int> &nums  , int st , int end ) {
+    int n = nums.size();
+    if(st<end) {
+        int mid = st +(end-st)/2;
+         int pivIdx=partition(nums,st,mid,end);
+         quickSort(nums,st,pivIdx-1);
+         quickSort(nums,pivIdx+1,end);
+    }
+ }
+ 
 
 int main () {
-    vector<int> arr={5,2,6,4,1,3};
-    quickSort(arr,0,arr.size()-1);
-    for(int val:arr) {
-        cout<<val<< " ";
+    vector<int> nums={1,3,3,3,2,1};
+    int st=0 , end=nums.size()-1;
+    quickSort(nums,st, end);
+    for(int & val:nums) {
+        cout<<val <<" ";
+
     }
     cout<<endl;
+    
+
 return 0;
-    }
-  
+}
