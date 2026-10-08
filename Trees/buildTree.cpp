@@ -79,16 +79,42 @@ void levelOrder(Node* root) {
   }
   cout<<endl;
 }
+int height(Node* root) {
+    if(root==NULL) {
+        return 0;
+    }
+   int  leftHeight=height(root->left);
+   int  rightHeight=height(root->right);
+   return max(leftHeight,rightHeight)+1;
+}
+int countNodes(Node* root) {
+    if(root==NULL) {
+        return 0;
+    }
+    int leftCount=countNodes(root->left);
+    int rightCount=countNodes(root->right);
+    return leftCount+ rightCount+1;
+}
+int sumNodes(Node* root) {
+     if(root==NULL) {
+        return 0;
+    }
+   int leftSum=sumNodes(root->left);
+   int rightSum=sumNodes(root->right);
+  return  leftSum+rightSum+root->data;
+
+}
 
 int main() {
-     cout<< "Enter the number of nodes:";
-     int n;
-     cin>>n;
-    vector<int>preorder(n);
-     cout<< "Enter the array of nodes:";
-    for(int &val:preorder){
-        cin>>val;
-    }
+    //  cout<< "Enter the number of nodes:";
+    //  int n;
+    //  cin>>n;
+    // vector<int>preorder(n);
+    //  cout<< "Enter the array of nodes:";
+    // for(int &val:preorder){
+    //     cin>>val;
+    // }
+    vector<int> preorder={1,2,-1, -1, 3, 4, -1 , -1 ,5, -1,-1};
     Node* root=buildTree(preorder);
     cout<<root->data<<endl;
     preOrder(root);
@@ -98,6 +124,10 @@ int main() {
     postOrder(root);
         cout<<endl;
         levelOrder(root);
+ cout<<endl;
+ cout<<height(root)<< " ";
+ cout<<countNodes(root)<<" ";
+ cout<<sumNodes(root)<<" ";
 
     return 0;
 }

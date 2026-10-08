@@ -10,7 +10,7 @@ bool isArmstrongNumber(int n) {
     }
     while(n) {
         dig=n%10;
-        sum +=intPow(dig ,count); 
+        // sum +=intPow(dig ,count); 
         n/=10;
     }
     return sum==copy;
