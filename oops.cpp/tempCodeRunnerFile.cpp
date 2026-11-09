@@ -1,2 +1,1 @@
- agePtr=new int;      /*Deep Copy ...*/
-        *agePtr= *obj.agePtr;
+Com c1("dev",20);
